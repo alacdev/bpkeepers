@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="Img/logoBP.svg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="Img/logoBP.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Img/logoBP.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/logoBP.svg" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img src="Img/logoBP.png" alt="" /></a>
+      <ul>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li class="dropdown">
+          <a href="#entrenaconmigo.html">Entrena conmigo</a>
+          <div class="dropdown-content">
+            <a href="altorendimiento.html">Alto rendimiento</a>
+            <a href="formacion.html">Formación</a>
+            <a href="personal.html">Personal (1 a 1)</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
-</head>
-<body>
+    <div class="presentacion">
+      <img src="Img/edit.png" alt="" />
+    </div>
 
-  <header>
-    <h1><a href="index.html"><img src="Img/logoBP.png" alt=""></a></h1>
-  </header>
+    <div class="entrenamientos">
+      <h2>¡TU SIGUIENTE PASO COMO PORTERO!</h2>
+      <p>
+        Nuestro principal objetivo es potenciar al máximo tu entrenamiento,
+        ayudándote a desarrollar las cualidades y conocimientos óptimos para
+        convertirte en un/a portero/a proactivo, consciente y eficiente.
+        ¡Descubre como lograrlo con nuestros servicios!
+      </p>
+      <div class="buttons">
+        <button>Alto rendimiento</button>
+        <button>Formación</button>
+        <button>Personal (1 a 1)</button>
+      </div>
+    </div>
 
-  <nav>
-    <ul>
-      <li><a href="sobremi.html">Sobre mí</a></li>
-      <li class="dropdown">
-        <a href="#entrenaconmigo.html">Entrena conmigo</a>
-        <div class="dropdown-content">
-          <a href="altorendimiento.html">Alto rendimiento</a>
-          <a href="formacion.html">Formación</a>
-          <a href="personal.html">Personal (1 a 1)</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+    <footer>
+      <p>© 2024 <strong>BP Keepers.</strong> Todos los derechos reservados.</p>
+    </footer>
 
-  <div class="img">
-    <img src="Img/edit.jpg" alt="">
-  </div>
-
-  <footer>
-    <p>© 2024 <strong>BP Keepers.</strong> Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

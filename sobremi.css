@@ -1,0 +1,52 @@
+.cards {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 70vw;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;     
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 50%; /* Cambiado para que la imagen ocupe la mitad del ancho */
+    height: auto;
+    display: block;
+}
+
+.card .overlay {
+    flex-grow: 1; /* Para que ocupe todo el espacio restante */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        flex-direction: column; /* Para que los elementos estén uno encima del otro */
+    }
+    
+    .card img {
+        width: 100%; /* Cambiado para que la imagen ocupe todo el ancho */
+    }
+}

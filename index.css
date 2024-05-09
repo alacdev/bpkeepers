@@ -1,0 +1,80 @@
+:root {
+    --fuente-base: "Poppins", sans-serif;
+    --fondo: url("Img/fondo.jpg");
+    --color-base: rgb(0,150,255);
+  }
+
+.presentacion img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  animation: la-verdadera-vuelta 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes la-verdadera-vuelta {
+  0% {
+    transform: rotate3d(-1, 1, 0, 80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+    opacity: 1;
+  }
+}
+
+/* Botones entrenamientos */
+.entrenamientos {
+  height: 500px; /* Altura suficiente para permitir el desplazamiento */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.entrenamientos.show {
+  opacity: 1;
+}
+
+.entrenamientos h2 {
+  font-size: 4vw;
+  font-family: var(--fuente-script);
+  margin-bottom: 0;
+}
+
+.entrenamientos p {
+  margin: 5px 200px 20px 200px;
+}
+
+.buttons {
+    margin-top: 1%;
+}
+/* Animaciones y estilos de los botones */
+button {
+    padding: 1.3em 3em;
+    margin: 0 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: var(--color-base);
+    box-shadow: 0px 15px 20px var(--color-base);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }

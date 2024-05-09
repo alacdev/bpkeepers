@@ -1,0 +1,80 @@
+/* Roboto */@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Poppins */@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --fuente-base: "Poppins", sans-serif;
+  --fondo: url("Img/fondo.jpg");
+  --color-base: rgb(0,150,255);
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-image: var(--fondo);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  margin: 1vw 5vw 0.2vw 5vw;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 4vw;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: solid 1px white;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}

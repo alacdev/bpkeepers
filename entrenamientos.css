@@ -1,0 +1,39 @@
+.descripcion {
+    text-align: center;
+    margin: 0 10%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    float: left; 
+    margin-right: 20px; 
+}
+
+.descripcion p {
+    margin: 0 10%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+}

@@ -1,9 +1,10 @@
-/* Poppins */@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --fuente-base: "Poppins", sans-serif;
   --fondo: url("../img/fondo.jpg");
-  --color-base: rgb(0,150,255);
+  --color-base: rgb(0, 150, 255);
 }
 
 body {
@@ -73,11 +74,73 @@ nav ul li a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.menu-toggle {
+  display: none; /* Oculta el menú hamburguesa por defecto */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Color de fondo del menú desplegable */
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  margin-top: auto; 
-   
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* Evita que el menú desplegable se muestre al hacer hover en dispositivos móviles */
+  }
 }

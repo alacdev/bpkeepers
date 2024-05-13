@@ -15,7 +15,7 @@
       <ul>
         <li><a href="src/sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
-          <a href="src/entrenaconmigo.html">Entrena conmigo</a>
+          <a>Entrena conmigo</a>
           <div class="dropdown-content">
             <a href="src/altorendimiento.html">Alto rendimiento</a>
             <a href="src/formacion.html">Formación</a>
@@ -23,6 +23,11 @@
           </div>
         </li>
       </ul>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
 
     <div class="presentacion">
@@ -61,6 +66,18 @@
         } else {
           entrenamientos.classList.remove("show");
         }
+      });
+
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector("nav ul").classList.toggle("show");
+        });
+
+      document.querySelectorAll(".dropdown").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          item.querySelector(".dropdown-content").classList.toggle("show");
+        });
       });
     </script>
   </body>

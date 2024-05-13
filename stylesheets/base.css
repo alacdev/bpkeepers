@@ -142,5 +142,7 @@ footer {
 
   .dropdown:hover .dropdown-content {
     display: none; /* Evita que el menú desplegable se muestre al hacer hover en dispositivos móviles */
-  }
+  }  
+
+  
 }

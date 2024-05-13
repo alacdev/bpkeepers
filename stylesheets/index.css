@@ -77,4 +77,22 @@ button:active {
   transform: translateY(-1px);
 }
 
+@media only screen and (max-width: 600px) {
+  .entrenamientos p {
+    margin: 0;
+  }
 
+  .entrenamientos {
+    opacity: 1;
+  }
+
+  .buttons a {
+    width: 100vw;
+    margin-top: 10%;
+  }
+
+  .buttons button {
+    margin-top: 2em;
+  }
+  
+}

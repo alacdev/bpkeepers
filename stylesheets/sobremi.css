@@ -53,9 +53,12 @@
         width: 100%; /* Cambiado para que la imagen ocupe todo el ancho */
     }
 
-    .card .overlay {
-        
-        width: 100%;
+    .card .overlay {        
+        width: auto;
         opacity: 1;
+    }
+
+    .card p {
+        width: 100%;
     }
 }

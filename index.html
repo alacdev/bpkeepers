@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav>
-      <a href="index.html"><img src="img/logoBP.png" alt="" /></a>
+      <a href="index.html"><img src="img/logoBP.png" alt="Logo BPKeepers" id="logo"/></a>
       <ul>
         <li><a href="src/sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
@@ -23,11 +23,21 @@
           </div>
         </li>
       </ul>
-      <div class="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
+      <label class="menu-hamburguesa" for="menu-hamburguesa">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+          id="menuToggle"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </label>
+      <input type="checkbox" id="menu-checkbox">      
     </nav>
 
     <div class="overlay"></div>
@@ -78,16 +88,11 @@
       });
 
       //Menú hamburguesa
-      const menuToggle = document.querySelector(".menu-toggle");
-      const nav = document.querySelector("nav ul");
-      const overlay = document.querySelector(".overlay");
 
-      menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-
-      overlay.addEventListener("click", () => {
-        nav.classList.remove("active");
+      var menuToggle = document.querySelector("#menuToggle");
+      var menuMobile = document.querySelector(".menuMobile");
+      menuToggle.addEventListener("click", function() {
+        
       });
     </script>
   </body>

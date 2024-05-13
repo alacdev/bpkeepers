@@ -79,7 +79,13 @@ button:active {
 
 @media only screen and (max-width: 600px) {
   .entrenamientos p {
-    margin: 0;
+    margin: 0 0.5em;
+    font-size: 1em;
+  }
+
+  .entrenamientos h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
   }
 
   .entrenamientos {

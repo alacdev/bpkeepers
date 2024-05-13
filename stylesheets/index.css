@@ -137,8 +137,11 @@ button:active {
     margin-top: 2em;
   }
 
-  .logo25 {
+  .colaboradores{    
     margin-top: 20%;
+  }
+
+  .logo25 {
     padding: 5%;
     background-color: rgb(0, 0, 0, 0.2);
     border-radius: 5%;

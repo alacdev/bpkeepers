@@ -51,6 +51,16 @@
       <p>© 2024 <strong>BP Keepers.</strong> Todos los derechos reservados.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var entrenamientos = document.querySelector(".entrenamientos");
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > 400) {
+        } else {
+          entrenamientos.classList.remove("show");
+        }
+      });
+    </script>
   </body>
 </html>

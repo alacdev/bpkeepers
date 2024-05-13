@@ -41,16 +41,9 @@
     opacity: 1;
 }
 
-/* Tablets */
+
+/* Móviles y tablets */
 @media (max-width: 1024px) {
-    .card p {
-        font-size: auto;
-    }
-}
-
-
-/* Móviles */
-@media (max-width: 600px) {
     .card {
         width: 100%;
         flex-direction: column; /* Para que los elementos estén uno encima del otro */

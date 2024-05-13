@@ -3,7 +3,7 @@
 
 :root {
   --fuente-base: "Poppins", sans-serif;
-  --fondo: url("Img/fondo.jpg");
+  --fondo: url("../img/fondo.jpg");
   --color-base: rgb(0,150,255);
 }
 

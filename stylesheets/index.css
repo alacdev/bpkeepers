@@ -153,6 +153,11 @@ button:active {
     justify-content: center;
   }
 
+  .logo25 img {
+    width: 25%;
+    margin-bottom: 5%;
+  }
+
   .logo25 p {
     text-align: center;
     font-size: 0.7em;

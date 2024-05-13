@@ -6,8 +6,8 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="stylesheets/base.css" />
     <link rel="stylesheet" href="stylesheets/index.css" />
-    <link rel="icon" href="img/logoBP.svg" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/logoBP.svg" />
+    <link rel="icon" href="img/logoBP.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/logoBP.png" />
   </head>
   <body>
     <nav>
@@ -57,6 +57,7 @@
         var scrollPosition = window.scrollY;
 
         if (scrollPosition > 400) {
+          entrenamientos.classList.add("show");
         } else {
           entrenamientos.classList.remove("show");
         }

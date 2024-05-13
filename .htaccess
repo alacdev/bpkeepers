@@ -1,28 +1,14 @@
 # Activar el motor de reescritura
 RewriteEngine On
 
-# Redireccionar de http a https
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Redireccionar a www
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 # URLs amigables /
 RewriteRule ^$ /index.html [L]
 
-RewriteRule ^sobre-mi$ /sobremi.html [L]
+RewriteRule ^sobre-mi$ /src/sobremi.html [L]
 
-RewriteRule ^entrena-conmigo$ /entrenaconmigo.html [L]
+RewriteRule ^entrena-conmigo$ /src/entrenaconmigo.html [L]
 
-RewriteRule ^entrenamiento-personal$ /personal.html [L]
-RewriteRule ^entrenamiento-alto-rendimiento$ /altorendimiento.html [L]
-RewriteRule ^entrenamiento-de-formacion$ /formacion.html [L]
+RewriteRule ^entrenamiento-personal$ /src/personal.html [L]
+RewriteRule ^entrenamiento-alto-rendimiento$ /src/altorendimiento.html [L]
+RewriteRule ^entrenamiento-de-formacion$ /src/formacion.html [L]
 
-# Establecer encabezados de seguridad (CORS)
-<IfModule mod_headers.c>
-    Header set X-XSS-Protection "1; mode=block"
-    Header always set X-Content-Type-Options "nosniff"
-    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-</IfModule>

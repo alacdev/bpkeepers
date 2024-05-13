@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrena conmigo</title>
-    <link rel="stylesheet" href="../stylesheets/base.css">
-    <link rel="stylesheet" href="../stylesheets/entrenaconmigo.css">
-    <link rel="icon" href="../img/logoBP.svg" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../img/logoBP.svg">
-  
+    <link rel="stylesheet" href="../stylesheets/base.css" />
+    <link rel="stylesheet" href="../stylesheets/entrenaconmigo.css" />
+    <link rel="icon" href="../img/logoBP.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../img/logoBP.svg" />
   </head>
   <body>
     <nav>
@@ -26,21 +25,21 @@
       </ul>
     </nav>
 
-    <form action="proccessform.php" method="POST">
-      <label for="email">Correo:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-  
-      <label for="tipo-entrenamiento">Tipo de entrenamiento:</label>
-      <select id="tipo-entrenamiento" name="tipo-entrenamiento" required>
-          <option value="alto rendimiento">Alto rendimiento</option>
-          <option value="formacion">Formación</option>
-          <option value="personal">Personal (1 a 1)</option>
-      </select>
-  
-      <input type="submit" value="Enviar">
-  </form>
+    <div class="form">
+      <h2>Inscripción</h2>
+      <p>
+        Por favor, envíenos un correo electrónico indicando su nombre, número de
+        teléfono, un mensaje opcional y el tipo de entrenamiento en el que
+        estaría interesado.
+        Trtaremos de responderle a la mayor brevedad posible
+      </p>
+      <a
+        href="mailto:ejemplo@correo.com?subject=Consulta%20de%20entrenamiento&body=Nombre:%0D%0ATeléfono%20de%20contacto:%0D%0AMensaje%20(opcional):%0D%0ATipo%20de%20entrenamiento%20interesado:"
+        >¡¡ Empezemos !!</a
+      >
+    </div>
   </body>
+  <footer>
+    <p>© 2024 <strong>BP Keepers.</strong> Todos los derechos reservados.</p>
+  </footer>
 </html>

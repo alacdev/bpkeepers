@@ -27,7 +27,7 @@ nav {
 }
 
 nav img {
-  height: 4vw;
+  height: 4em;
   width: auto;
 }
 
@@ -43,7 +43,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 1.3em;
   color: white;
 }
 

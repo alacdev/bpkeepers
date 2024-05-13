@@ -7,7 +7,8 @@
 }
 
 .card {
-    width: 70vw;
+    width: 65%;
+    height: auto;
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -22,11 +23,12 @@
 
 .card img {
     width: 50%; /* Cambiado para que la imagen ocupe la mitad del ancho */
-    height: auto;
+    height: 100%;
     display: block;
 }
 
 .card .overlay {
+    width: 50%;
     flex-grow: 1; /* Para que ocupe todo el espacio restante */
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -47,6 +49,13 @@
     }
     
     .card img {
+        order: -1;
         width: 100%; /* Cambiado para que la imagen ocupe todo el ancho */
+    }
+
+    .card .overlay {
+        
+        width: 100%;
+        opacity: 1;
     }
 }

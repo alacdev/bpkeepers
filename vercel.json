@@ -1,0 +1,11 @@
+{
+    "routes": [
+      { "src": "/sobre-mi", "dest": "/src/sobremi.html" },
+      { "src": "/entrena-conmigo", "dest": "/src/entrenaconmigo.html" },
+      { "src": "/entrenamiento-alto-rendimiento", "dest": "/src/altorendimiento.html" },
+      { "src": "/entrenamiento-de-formacion", "dest": "/src/formacion.html" },
+      { "src": "/entrenamiento-personal-1a1", "dest": "/src/personal.html" },
+      { "src": "/.*", "dest": "/index.html" }
+    ]
+  }
+  

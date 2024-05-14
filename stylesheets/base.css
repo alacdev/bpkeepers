@@ -134,6 +134,10 @@ nav ul li a {
   visibility: hidden;
 }
 
+.dropdown a {
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   text-align: center;

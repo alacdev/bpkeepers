@@ -148,6 +148,11 @@ footer {
     visibility: hidden;
   }
 
+  .nav {
+    display: block;
+    visibility: visible;
+  }
+
   /* Menú hamburguesa */
   .menu-toggle {
     display: none;

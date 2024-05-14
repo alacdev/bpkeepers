@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrenamiento de alto rendimiento</title>
-    <link rel="stylesheet" href="../stylesheets/base.css">
-    <link rel="stylesheet" href="../stylesheets/entrenamientos.css">
+    <link rel="stylesheet" href="../stylesheets/base.css" />
+    <link rel="stylesheet" href="../stylesheets/entrenamientos.css" />
+    <link rel="stylesheet" href="../stylesheets/altorendimiento.css" />
     <link rel="icon" href="../img/logoBP.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../img/logoBP.png" />
   </head>
   <body>
-    <nav>
-      <a href="../index.html"><img src="../img/logoBP.png" alt="Logo BPKeepers" id="logo"/></a>
+    <nav class="menu-desktop">
+      <a href="../index.html"
+        ><img src="../img/logoBP.png" alt="Logo BPKeepers" id="logo"
+      /></a>
       <ul>
         <li><a href="sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
@@ -23,25 +26,36 @@
           </div>
         </li>
       </ul>
-      <label class="menu-hamburguesa" for="menu-hamburguesa">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-          id="menuToggle"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
-      </label>     
+    </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li class="dropdown">
+          <a>Entrena conmigo</a>
+          <div class="dropdown-content">
+            <a href="altorendimiento.html">Alto rendimiento</a>
+            <a href="formacion.html">Formación</a>
+            <a href="personal.html">Personal (1 a 1)</a>
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <div class="descripcion">
-      <h1>Entrenamientos de alto rendimiento</h1>
-      <!-- <img src="Img/edit.jpg" alt="Imagen de presentación"> -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="../img/altorendimiento.jpg" alt="Imagen de presentación" />
+          <div class="overlay"></div>
+          <h1>Entrenamientos de alto rendimiento</h1>
+        </div>
+      </div>
       <p>
         Este tipo de entrenamiento está pensado para el portero que quiere dar
         un salto en sus entrenamientos específicos de portero. El entrenamiento
@@ -51,9 +65,9 @@
         a menos acabando en una tarea totalmente abierta con una toma de
         decisión completa para el portero. Estaremos formando y moldeando al
         portero para que sea proactivo, que intente evitar antes de parar, que
-        sea comunicativo y resolutivo. <br>
-        Incluye la grabación de las sesiones con
-        su posterior visionado para el aanálisis para la corrección de errores
+        sea comunicativo y resolutivo. <br />
+        Incluye la grabación de las sesiones con su posterior visionado para el
+        aanálisis para la corrección de errores
       </p>
       <a
         href="mailto:info@bpkeepers.com?subject=Consulta%20de%20entrenamiento&body=Nombre:%0D%0ATeléfono%20de%20contacto:%0D%0AMensaje%20(opcional):%0D%0ATipo%20de%20entrenamiento%20interesado: Alto rendimiento"
@@ -63,5 +77,5 @@
   </body>
   <footer>
     <p>© 2024 <strong>BP Keepers.</strong> Todos los derechos reservados.</p>
-  </footer>  
+  </footer>
 </html>

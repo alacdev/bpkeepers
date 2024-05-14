@@ -10,8 +10,10 @@
     <link rel="apple-touch-icon" href="img/logoBP.png" />
   </head>
   <body>
-    <nav>
-      <a href="index.html"><img src="img/logoBP.png" alt="Logo BPKeepers" id="logo"/></a>
+    <nav class="menu-desktop">
+      <a href="index.html"
+        ><img src="img/logoBP.png" alt="Logo BPKeepers" id="logo"
+      /></a>
       <ul>
         <li><a href="src/sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
@@ -22,21 +24,28 @@
             <a href="src/personal.html">Personal (1 a 1)</a>
           </div>
         </li>
-      </ul>
-      <label class="menu-hamburguesa" for="menu-hamburguesa">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-          id="menuToggle"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
-      </label>     
+      </ul>      
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="src/sobremi.html">Sobre mí</a></li>
+          <li class="dropdown">
+            <a>Entrena conmigo</a>
+            <div class="dropdown-content">
+              <a href="src/altorendimiento.html">Alto rendimiento</a>
+              <a href="src/formacion.html">Formación</a>
+              <a href="src/personal.html">Personal (1 a 1)</a>
+            </div>
+          </li>
+        </ul>
     </nav>
 
     <div class="presentacion">
@@ -64,10 +73,11 @@
           <a href="https://twofivegloves.com">
             <img src="img/logo25.png" alt="Logo TwoFive Gloves" />
           </a>
-          <p>OBTÉN UN 25% DE DESCUENTO EN TODA LA WEB CON EL CÓDIGO "BPKEEPERS"</p>
+          <p>
+            OBTÉN UN 25% DE DESCUENTO EN TODA LA WEB CON EL CÓDIGO "BPKEEPERS"
+          </p>
         </div>
       </div>
-      
     </div>
 
     <footer>
@@ -86,8 +96,6 @@
           entrenamientos.classList.remove("show");
         }
       });
-
-      
     </script>
   </body>
 </html>

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrenamiento de formación</title>
     <link rel="stylesheet" href="../stylesheets/base.css" />
-    <link rel="stylesheet" href="../stylesheets/entrenamientos.css">
+    <link rel="stylesheet" href="../stylesheets/entrenamientos.css" />
+    <link rel="stylesheet" href="../stylesheets/formacion.css" />
     <link rel="icon" href="../img/logoBP.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../img/logoBP.png" />
   </head>
   <body>
-    <nav>
-      <a href="../index.html"><img src="../img/logoBP.png" alt="Logo BPKeepers" id="logo"/></a>
+    <nav class="menu-desktop">
+      <a href="../index.html"
+        ><img src="../img/logoBP.png" alt="Logo BPKeepers" id="logo"
+      /></a>
       <ul>
         <li><a href="sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
@@ -23,25 +26,35 @@
           </div>
         </li>
       </ul>
-      <label class="menu-hamburguesa" for="menu-hamburguesa">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-          id="menuToggle"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
-      </label>     
+    </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li class="dropdown">
+          <a>Entrena conmigo</a>
+          <div class="dropdown-content">
+            <a href="altorendimiento.html">Alto rendimiento</a>
+            <a href="formacion.html">Formación</a>
+            <a href="personal.html">Personal (1 a 1)</a>
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <div class="descripcion">
-      <h1>Entrenamientos de formación</h1>
-      <!-- <img src="Img/edit.jpg" alt="Imagen de presentación"> -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <div class="overlay"></div>
+          <h1>Entrenamientos de formación</h1>
+        </div>
+      </div>
       <p>
         Este entrenamiento está enfocado para la formación básica e inicial del
         portero. Con especial hincapié a la parte técnica, como la colocación de

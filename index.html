@@ -15,7 +15,7 @@
         ><img src="img/logoBP.png" alt="Logo BPKeepers" id="logo"
       /></a>
       <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="src/sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
           <a>Entrena conmigo</a>
           <div class="dropdown-content">
@@ -36,7 +36,7 @@
     <nav class="nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-mi">Sobre mí</a></li>
+          <li><a href="src/sobremi.html">Sobre mí</a></li>
           <li class="dropdown">
             <a>Entrena conmigo</a>
             <div class="dropdown-content">
@@ -99,37 +99,7 @@
       
 
       //Enrutamiento dinámico 
-      document.addEventListener('DOMContentLoaded', function() {
-    const contentDiv = document.getElementById('content');
-
-    // Función para cargar el contenido basado en el fragmento de la URL
-    function loadContent(fragmentId) {
-        fetch(`/src/${fragmentId}.html`)
-            .then(response => response.text())
-            .then(html => {
-                contentDiv.innerHTML = html;
-            })
-            .catch(error => console.error('Error fetching page:', error));
-    }
-
-    // Manejar cambios de fragmento
-    function handleHashChange() {
-        const fragmentId = location.hash.substr(1);
-        if (fragmentId) {
-            loadContent(fragmentId);
-        } else {
-            // Cargar el contenido por defecto
-            loadContent('index');
-        }
-    }
-
-    // Manejar el evento de cambio de fragmento
-    window.addEventListener('hashchange', handleHashChange);
-
-    // Cargar el contenido inicial
-    handleHashChange();
-});
-
+      
     </script>
   </body>
 </html>

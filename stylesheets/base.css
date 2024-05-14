@@ -129,6 +129,11 @@ nav ul li a {
   display: block;
 }
 
+.nav {
+  display: none;
+  visibility: hidden;
+}
+
 /* Footer */
 footer {
   text-align: center;

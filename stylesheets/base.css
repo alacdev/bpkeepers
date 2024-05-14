@@ -164,11 +164,11 @@ footer {
   }
 
   .menu-btn {
+    margin-right: 5%;
     position: absolute;
     top: 40px;
     right: 20px;
-    width: 4em;
-    height: auto;
+    width: 2.5em;
     cursor: pointer;
     z-index: 1000;
   }

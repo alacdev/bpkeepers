@@ -11,10 +11,31 @@
   </head>
   <body>
     <nav class="menu-desktop">
-      <a href="index.html"
+      <a href="index.html" onclick="navigateTo('/')"
         ><img src="img/logoBP.png" alt="Logo BPKeepers" id="logo"
       /></a>
       <ul>
+        <li><a href="src/sobremi.html" onclick="navigateTo('/sobre-mi')">Sobre mí</a></li>
+        <li class="dropdown">
+          <a>Entrena conmigo</a>
+          <div class="dropdown-content">
+            <a href="src/altorendimiento.html" onclick="navigateTo('/entrenamiento-alto-rendimiento')">Alto rendimiento</a>
+            <a href="src/formacion.html" onclick="navigateTo('/entrenamiento-de-formacion')">Formación</a>
+            <a href="src/personal.html" onclick="navigateTo('/entrenamiento-personal-1a1')">Personal (1 a 1)</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="src/sobremi.html">Sobre mí</a></li>
         <li class="dropdown">
           <a>Entrena conmigo</a>
@@ -24,28 +45,7 @@
             <a href="src/personal.html">Personal (1 a 1)</a>
           </div>
         </li>
-      </ul>      
-    </nav>
-
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <nav class="nav">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="src/sobremi.html">Sobre mí</a></li>
-          <li class="dropdown">
-            <a>Entrena conmigo</a>
-            <div class="dropdown-content">
-              <a href="src/altorendimiento.html">Alto rendimiento</a>
-              <a href="src/formacion.html">Formación</a>
-              <a href="src/personal.html">Personal (1 a 1)</a>
-            </div>
-          </li>
-        </ul>
+      </ul>
     </nav>
 
     <div class="presentacion">
@@ -96,6 +96,10 @@
           entrenamientos.classList.remove("show");
         }
       });
+
+      function navigateTo(route) {
+        window.location.href = route;
+      }
     </script>
   </body>
 </html>
